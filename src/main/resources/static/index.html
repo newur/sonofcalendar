@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>sonofcalendar</title>
+        <script src="/frameworks/jquery.min.js"></script>
+        <script src="/frameworks/vue.js"></script>
+        <script src="/frameworks/mopidy.js"></script>
+        <script src="authorization.js"></script>
+        <script src="index.js"></script>
+        <script src="/vue-components/photos/photos.js"></script>
+        <script src="/vue-components/clock/clock.js"></script>
+        <script src="/vue-components/calendar/calendar.js"></script>
+        <script src="/vue-components/feed/feed.js"></script>
+        <script src="/vue-components/music/music.js"></script>
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/vue-components/photos/photos.css">
+        <link rel="stylesheet" href="/vue-components/clock/clock.css">
+        <link rel="stylesheet" href="/vue-components/calendar/calendar.css">
+        <link rel="stylesheet" href="/vue-components/feed/feed.css">
+        <link rel="stylesheet" href="/vue-components/music/music.css">
+    </head>
+
+    <body class="body">
+
+        <div id="main" class="main">
+            <photos :settings="settings.photoSettings"></photos>
+            <clock :settings="settings.clockSettings"></clock>
+            <calendar :settings="settings.calendarSettings"></calendar>
+            <feed :settings="settings.rssSettings"></feed>
+            <!--<musicplayer></musicplayer>-->
+        </div>
+
+    </body>
+</html>

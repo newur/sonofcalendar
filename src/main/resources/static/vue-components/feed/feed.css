@@ -1,0 +1,18 @@
+#feed {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+.feedTitle {
+    display: inline-block;
+    font-size: 30px;
+    color: #FFFFFF;
+    width: 600px;
+}
+.feedText {
+    display: inline-block;
+    font-size: 20px;
+    color: #FFFFFF;
+    width: 600px;
+}

@@ -1,0 +1,27 @@
+.musicplayer{
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    text-align: center;
+}
+
+.musicplayer-search{
+    width: 600px;
+    margin: 0 auto;
+}
+
+.musicplayer-search-results{
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.musicplayer-mini{
+    width: 600px;
+    margin: 0 auto;
+}
+
+.musicplayercontrol{
+    cursor: pointer;
+    color: white;
+}

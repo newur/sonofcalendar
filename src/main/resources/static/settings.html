@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Settings</title>
+    <meta http-equiv="Content-Type" charset="UTF-8"/>
+    <script src="/frameworks/jquery.min.js"></script>
+    <script src="/frameworks/vue.js"></script>
+    <script src="/frameworks/vue-router.js"></script>
+    <script src="authorization.js"></script>
+    <script src="settings.js"></script>
+    <script src="/vue-components/colorpicker/colorpicker.js"></script>
+    <script src="/vue-components/user/usersettings.js"></script>
+    <script src="/vue-components/calendar/calendarsettings.js"></script>
+    <script src="/vue-components/clock/clocksettings.js"></script>
+    <script src="/vue-components/photos/photosettings.js"></script>
+    <script src="/vue-components/feed/feedsettings.js"></script>
+    <link rel="stylesheet" href="/vue-components/colorpicker/colorpicker.css">
+    <link rel="stylesheet" href="/css/settings.css">
+</head>
+<body>
+
+        <div id="main">
+
+            <div class="header">
+                <span>{{tabname}}</span>
+            </div>
+
+            <div class="navigation">
+                <a @click="setTab('usersettings','Kontoeinstellungen');">
+                    <div>
+                        <img width="32" src="/img/account_128.png">
+                        <span>Konto</span>
+                    </div>
+                </a>
+                <a @click="setTab('calendarsettings','Kalendereinstellungen');">
+                    <div>
+                        <img width="32" src="/img/calendar_128.png">
+                        <span>Kalender</span>
+                    </div>
+                </a>
+                <a @click="setTab('photosettings','Foto-Einstellungen');">
+                    <div>
+                        <img width="32" src="/img/photos_128.png">
+                        <span>Fotos</span>
+                    </div>
+                </a>
+                <a @click="setTab('clocksettings','Datum und Uhrzeit einstellen');">
+                    <div>
+                        <img width="32" src="/img/clock_128.png">
+                        <span>Uhr</span>
+                    </div>
+                </a>
+                <a @click="setTab('feedsettings','RSS-Feed Einstellungen');">
+                    <div>
+                        <img width="32" src="/img/rss_128.png">
+                        <span>RSS</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="content">
+                <component :is="tab" :settings="settings"></component>
+            </div>
+
+
+        </div>
+
+</body>
+</html>

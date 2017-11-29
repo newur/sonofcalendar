@@ -1,0 +1,147 @@
+body{
+    font-family: Roboto, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+.header {
+    line-height: 60px;
+    height: 60px;
+    background-color: rgb(79,138,131);
+    padding-left: 170px;
+}
+
+.header > span {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(250,198,153);
+}
+
+.navigation {
+    position: absolute;
+    left: 0px;
+    top: 60px;
+    bottom: 0px;
+    width: 160px;
+    background-color: rgb(215,221,219);
+}
+
+.navigation > a > div{
+    cursor: pointer;
+    padding-left: 5px;
+    line-height: 50px;
+    padding: 2px 2px 2px 5px;
+}
+
+.navigation > a > div:hover{
+   background-color : rgb(250,198,153);
+}
+
+.navigation > a > div > img{
+    vertical-align:middle;
+}
+
+.navigation > a > div > span{
+    font-size: 18px;
+    color: rgb(113,33,100);
+}
+
+.content {
+    position: absolute;
+    top: 60px;
+    bottom: 0px;
+    left: 200px;
+    right: 0px;
+}
+
+.settingsbox{
+    margin-top: 20px;
+    width: 800px;
+    padding: 2px 10px 10px 10px;
+    background: #f5f5f5;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 1px 2px 4px rgba(0,0,0,.4);
+}
+
+.settingsboxtitle{
+    text-align: right;
+    color: rgb(79,138,131);
+}
+
+.settingsoption{
+    margin-top: 8px;
+}
+
+.settingslabel{
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 14px;
+    line-height: 30px;
+    float: left;
+    width: 200px;
+    color: rgb(79,138,131);
+    border-bottom: 1px solid rgb(79,138,131);
+}
+
+.settingsvalue{
+    display: inline-block;
+    height: 30px;
+    border-bottom: 1px solid rgb(79,138,131);
+}
+
+.savesettingsbtn{
+    margin-top: 20px;
+}
+
+.settingsinput{
+    height: 23px;
+    font-size: 18px;
+    color: rgb(113,33,100);
+    border: none;
+    background: #f5f5f5;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+  transition: opacity 200ms;
+}
+
+.popup-settingsbox{
+  margin: 75px auto;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #666;
+  width: 600px;
+  box-shadow: 0 0 50px rgba(0,0,0,0.5);
+  position: relative;
+}
+
+.calendaroption{
+    margin-top: 20px;
+    padding: 5px;
+    width: 250px;
+    background: #f5f5f5;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 1px 2px 4px rgba(0,0,0,.4);
+    cursor: pointer;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.calendaroption > img{
+    vertical-align: middle;
+}
