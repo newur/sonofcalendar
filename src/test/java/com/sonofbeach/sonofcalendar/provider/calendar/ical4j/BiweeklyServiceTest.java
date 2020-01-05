@@ -1,10 +1,12 @@
 package com.sonofbeach.sonofcalendar.provider.calendar.ical4j;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Ignore;
+import org.junit.Test;
 
 public class BiweeklyServiceTest {
 
     @Test
+    @Ignore
     public void getCalendarEventsTest(){
         BiweeklyService biweeklyService = new BiweeklyService();
         biweeklyService.getCalendarEvents(
